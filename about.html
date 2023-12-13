@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        navigation {
+            display: flex;
+            color: antiquewhite;
+            height: 80px;
+            position: fixed;
+            font-size: 25px;
+            width: 600vh;
+            z-index: 100;
+            background-color: #00004d;
+        }
+        
+        navigation h3 {
+            margin-left: 20px;
+        }
+        
+        ul {
+            display: flex;
+        }
+        
+        li {
+            margin-right: 10px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: antiquewhite;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        
+        li .exit {
+            margin-left: 1950%;
+        }
+        
+        .link {
+            background-color: #65000b;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typewriter 4s steps(30) 3s infinite;
+        }
+        
+        .grad {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bolder;
+            color: aliceblue;
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 40px;
+        }
+        
+        .headone {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .location {
+            display: flex;
+        }
+        
+        .street {
+            font-size: 30px;
+            margin-top: 90px;
+            word-spacing: 10px;
+            color: #00004d;
+        }
+        
+        .streett {
+            font-size: 30px;
+            margin-top: 90px;
+            color: #00004d;
+            margin-left: -20px;
+            padding: 40px;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(-40px);
+            }
+            50% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-40px);
+            }
+        }
+        
+        .w3-animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        
+        .campus {
+            text-align: center;
+            font-size: 40px;
+            border-bottom: 2px solid #65000b;
+            font-weight: bolder;
+            margin: 40px;
+            color: #A22334;
+        }
+        
+        .icons {
+            width: 340px;
+            height: 340px;
+            margin-left: 30px;
+        }
+        
+        .emaill {
+            display: flex;
+        }
+        
+        .emaill div {
+            border-left: 2px solid #65000b;
+            margin: 50px;
+        }
+        
+        .emaill p {
+            margin: 80px;
+            font-size: 24px;
+            color: #65000b;
+        }
+        
+        .question {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 30px;
+        }
+        
+        .answer {
+            font-size: 19px;
+            margin-left: 35px;
+            margin-right: 20px;
+            text-align: justify;
+            line-height: 33px;
+        }
+        
+        .ssvg {
+            margin-top: -10px;
+            height: 140px;
+            background-color: #00004d;
+            display: flex;
+            column-gap: 10%;
+        }
+        
+        .ssvg img {
+            margin-left: 720%;
+        }
+        
+        .link {
+            background-color: #65000b;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        footer {
+            background-color: #194569;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+        }
+        
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .link {
+            background-color: #65000b;
+            color: antiquewhite;
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        .box {
+            padding: 20px;
+            border: 2px solid #e8e9eb;
+            background-color: #e8e9eb;
+            border-radius: 10px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <navigation>
+        <h3>Noble University</h3>
+        <ul>
+            <li><a href="./Home.php">Home</a></li>
+            <li><a href="./courses.php">Course</a></li>
+            <li><a href="./repu.html">University News</a></li>
+            <li><a href="./about.html">Contact Us</a></li>
+            <li><a href="./exit.php" class="exit">Exit</a></li>
+        </ul>
+    </navigation>
+    <div class="headone">
+
+        <img src="./uniimagge/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg" class="margin-top:-590px;">
+        <div class="grad typewriter" style="font-size:2.2rem;margin-top:-900px;margin-bottom:900px;">"Reach out to us anytime, day or night. Noble University is here for you 24/7, <br><br>ready to guide you towards a brighter future."</div>
+    </div>
+
+    <p class="campus"> Our Campus Location</p>
+    <div class="location">
+        <div class="box" style="margin-left:160px;">
+            <p><img src="./uniimagge/location.png" style="width:60px;height:70px;margin:45px;">
+                <p class="street">31, Oxford Street of Westminster, London, United Kingdom</p>
+            </p>
+        </div><br><br>
+        <div class="box" style="margin-left:100px;">
+            <p><img src="./uniimagge/phone-call.png" style="width:50px;height:60px;margin-top:70px;margin-left:30px;margin-right:40px;">
+                <p class="streett">+44 20 1221 6698</p>
+            </p>
+        </div>
+    </div>
+
+
+    <div>
+        <p class="campus"> How to email?</p>
+        <div class="emaill">
+            <img src="./uniimagge/Mail sent-rafiki.png" class="icons">
+            <div>
+                <p>Admissions- admissions@nobleuniversity.uk</p>
+                <p>General Inquiries- info@nobleuniversity.uk</p>
+                <p>Financial Aid- financialaid@nobleuniversity.uk
+
+                </p>
+                <p>Student Services- studentservices@nobleuniversity.uk</p>
+                <p>International Students- internationalstudents@nobleuniversity.uk</p>
+                <p>Alumni Relations- alumni@nobleuniversity.uk</p>
+                <p>
+                    Career Services- careerservices@nobleuniversity.uk</p>
+                <p>Local Students- localstudents@nobleuniversity.uk </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="campus">What are FAQs?</p>
+        <div class="question">How do I apply to Noble University?</div>
+        <div class="answer">It is an easy solution. Please go to<b>"Course"</b> tab in navigation bar and choose a course which a student want to join.Then,look for details. There is an enroll button and you can enroll it easily and we will respond back as soon as possible.</div>
+    </div><br>
+    <div class="question">Are scholarships options available?</div>
+    <div class="answer">We highly value your interest in our scholarship program! To be considered for a full scholarship, we assess various criteria including excellent results in standardized tests such as <b>IELTS, SAT Math, TOEFL, and PTE.</b> While it's not mandatory
+        to have outstanding scores in all of these tests, providing the relevant documentation showcasing your achievements will greatly enhance your application. We appreciate the effort you put into preparing and submitting these documents for our review.</div><br>
+    <div class="question">How can I pay my tuition fees?</div>
+    <div class="answer">If you encounter difficulty in paying the full tuition fees upfront, we offer a convenient solution. You can opt to <b>xsplit the payment into manageable installments.</b> To be considered for this option, please ensure that you attach a detailed
+        description of your financial circumstances and the proposed payment plan in your documentation file. We will carefully review your submission and take your situation into consideration during our evaluation process. Our aim is to make education
+        accessible, and we appreciate your proactive approach in providing the necessary information for our assessment.</div><br>
+    <div class="question">Are there networking events or alumni associations?</div>
+    <div class="answer">
+        We take great pride in <b>fostering a strong network among our alumni community. </b>As part of our commitment to maintaining those connections, we organize regular networking events. These events include monthly webinars where alumni can come
+        together either in-person or virtually. It provides a valuable opportunity to engage with fellow alumni, share insights, and expand professional networks. We encourage you to participate in these events, as they offer a platform for continued
+        growth, collaboration, and the chance to stay connected with the Noble University community.</div>
+    <div>
+        <p class="campus">Principle's Voice</p>
+        <div class="answer">Welcome to Noble University, where knowledge meets limitless possibilities! As the Headmaster of this esteemed institution, it is my honor to extend a warm invitation to you all. Our university is not just a place of learning, but a vibrant community
+            that thrives on intellectual curiosity and academic excellence. At Noble University, we believe in the power of connections and meaningful interactions. That is why we highly value your input and encourage you to reach out to us through our
+            "Contact Us" page. Your voice matters, and we are here to listen and assist you every step of the way. Whether you are a prospective student seeking information about our programs, an industry partner looking for collaboration opportunities,
+            or a curious mind in pursuit of knowledge, our dedicated team is ready to engage with you. We understand that your journey with us is unique, and we are committed to providing personalized guidance to help you achieve your goals. Our "Contact
+            Us" page serves as a gateway to connect with various departments, including admissions, student services, alumni relations, and more. It is designed to ensure that your inquiries, concerns, or suggestions are addressed promptly and efficiently.
+            I encourage you to take full advantage of this valuable resource. Let us know how we can support you on your educational journey, explore new opportunities together, and shape a brighter future. Your success is our utmost priority. Thank you
+            for choosing Noble University. We eagerly await your message, as it is through open dialogue that we continue to grow and evolve as a leading institution.
+
+
+
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="./uniimagge/instagram (1).png"></a>
+            <a href="#"><img src="./uniimagge/facebook (4).png"></a>
+            <a href="#"><img src="./uniimagge/google.png"></a>
+            <a href="#"><img src="./uniimagge/youtube.png"></a>
+        </div>
+
+    </footer>
+    <div class="link">
+        nobleuniversity.edu
+    </div>
+
+</body>
+
+</html>
